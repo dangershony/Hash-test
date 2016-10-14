@@ -55,6 +55,7 @@
 Network Trash Folder
 Temporary Items
 .apdisk
+Debug
 
 # Windows
 # =========================
@@ -77,3 +78,6 @@ $RECYCLE.BIN/
 
 # Windows shortcuts
 *.lnk
+*.log
+*.suo
+src/ipch/HASH-TEST-574230bf/HASH-TEST-224e135b.ipch

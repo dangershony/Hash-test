@@ -8,8 +8,8 @@
 
 #ifndef WIN32
 #include <sys/types.h>
-#include <sys/time.h>
-#include <sys/resource.h>
+//#include <sys/time.h>
+//#include <sys/resource.h>
 #endif
 
 
@@ -72,10 +72,10 @@ unsigned char parse_hex(char c)
 	std::abort();
 }
 
-std::vector<unsigned char> parse_string(const std::string & s)
+std::vector<char> parse_string(const std::string & s)
 {
 	if (s.size() % 2 != 0) std::abort();
-	std::vector<unsigned char> result(s.size() / 2);
+	std::vector<char> result(s.size() / 2);
 
 	for (std::size_t i = 0; i != s.size() / 2; ++i)
 		result[i] = 16 * parse_hex(s[2 * i]) + parse_hex(s[2 * i + 1]);
